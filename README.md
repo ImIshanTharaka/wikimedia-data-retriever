@@ -9,7 +9,7 @@ This is a multi model maven project. There is a parent microservice (wikimedia-d
 ![alt text](https://github.com/ImIshanTharaka/wikimedia-data-retriever/blob/main/diagram.jpg?raw=true)
 
 ## What I have learned
-* Exchange data between microservicesa using Apache Kafka
+* communiacaton between microservices using Apache Kafka
 * working with multi model Maven projects
 
 ## Used technologies
