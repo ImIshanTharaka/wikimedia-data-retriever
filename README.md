@@ -5,6 +5,7 @@ An application to retrieve real-time stream data from Wikimedia using Apache Kaf
 This is a multi model maven project. There is a parent microservice (wikimedia-data-retriever) and 2 child microservices.
 1. kafka-producer-wikimedia - read real-time stream data from Wikimedia and write them to the Kafka broker
 2. kafka-consumer-database - read real-time stram data from kafka broker and write them to the MySQL database
+   
 ![alt text](https://github.com/ImIshanTharaka/wikimedia-data-retriever/blob/main/diagram.jpg?raw=true)
 
 ## What I have learned
