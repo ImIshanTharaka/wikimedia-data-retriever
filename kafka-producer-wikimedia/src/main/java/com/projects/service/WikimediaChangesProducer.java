@@ -25,11 +25,11 @@ public class WikimediaChangesProducer {
         String topic = "wikimedia_recentchange";    //topic is configured in KafkaTopicConfig
 
         //to read real time stream data from wikimedia, we use event handler & event source
-        EventHandler eventHandler = new WikimediaChangeHandler(kafkaTemplate, topic);   //WikimediaChangeHandler will trigger when there is an event in Wikimedia
+        EventHandler eventHandler = new WikimediaChangeHandler(kafkaTemplate, topic);   //define what to do when an event is occurred
 
         String url = "https://stream.wikimedia.org/v2/stream/recentchange";
 
-        EventSource.Builder builder = new EventSource.Builder(eventHandler, URI.create(url));
+        EventSource.Builder builder = new EventSource.Builder(eventHandler, URI.create(url));    //connecting to the event source wikimedia
         EventSource eventSource = builder.build();
 
         eventSource.start();
